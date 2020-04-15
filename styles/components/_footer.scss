@@ -1,0 +1,26 @@
+.section-footer {
+    grid-column: full-start / full-end;
+    grid-row: 4 / 5;
+
+    background-color: $blue_color;
+
+    .footer {
+        padding: 10.2rem 7.2rem 3.4rem 7.2rem;
+
+        &__details {
+            & > h4 {
+                margin-bottom: 1rem;
+                color: $white_color;
+            }
+
+            & > p {
+                color: $medium-grey-color;
+            }
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

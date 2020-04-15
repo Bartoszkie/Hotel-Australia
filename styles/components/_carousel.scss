@@ -1,0 +1,17 @@
+.section-carousel {
+    grid-column: full-start / full-end;
+    grid-row: 2 / 3;
+    
+
+    &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+
+        background-image: url("../../assets/img/JohnCleeseEricIdle.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

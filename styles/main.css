@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-family: 'Raleway', sans-serif;
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [full-start] minmax(min-content, 1fr) [center-start] (minmax(min-content, 12rem))[10] [center-end] minmax(min-content, 1fr) [full-end];
+      grid-template-columns: [full-start] minmax(-webkit-min-content, 1fr) [center-start] repeat(10, minmax(-webkit-min-content, 12rem)) [center-end] minmax(-webkit-min-content, 1fr) [full-end];
+      grid-template-columns: [full-start] minmax(min-content, 1fr) [center-start] repeat(10, minmax(min-content, 12rem)) [center-end] minmax(min-content, 1fr) [full-end];
+  -ms-grid-rows: min-content 10vh 1fr min-content;
+      grid-template-rows: -webkit-min-content 10vh 1fr -webkit-min-content;
+      grid-template-rows: min-content 10vh 1fr min-content;
+  height: 100vh;
+}
+
+.h1 {
+  font-size: 2.4rem;
+}
+
+.section-header {
+  grid-column: full-start / full-end;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.1rem 5.3rem;
+}
+
+.section-header .header {
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-header .header > h1 {
+  color: #FF4858;
+  text-transform: uppercase;
+}
+
+.section-header .header__nav {
+  grid-column: full-start / full-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-header .header__nav__link {
+  color: #8D8D8D;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.section-header .header__nav__link:not(:last-child) {
+  margin-right: 3.6rem;
+}
+
+.section-carousel {
+  grid-column: full-start / full-end;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.section-carousel::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  background-image: url("../../assets/img/JohnCleeseEricIdle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-footer {
+  grid-column: full-start / full-end;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+  background-color: #5863F8;
+}
+
+.section-footer .footer {
+  padding: 10.2rem 7.2rem 3.4rem 7.2rem;
+}
+
+.section-footer .footer__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-footer .footer__details > h4 {
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+.section-footer .footer__details > p {
+  color: silver;
+}
+/*# sourceMappingURL=main.css.map */

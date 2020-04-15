@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: [full-start] minmax(min-content, 1fr) [center-start] repeat(10, minmax(min-content, 12rem)) [center-end] minmax(min-content, 1fr) [full-end];
+    grid-template-rows: min-content 10vh 1fr min-content;
+    height: 100vh;
+}
