@@ -1,17 +1,36 @@
 .section-carousel {
     grid-column: full-start / full-end;
     grid-row: 2 / 3;
-    
+    position: relative;
+
+    &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        background-image: url("../../assets/img/JohnCleeseEricIdle.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
 
     &::after {
         content: "";
         height: 100%;
         width: 100%;
-        display: inline-block;
 
-        background-image: url("../../assets/img/JohnCleeseEricIdle.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        background-color: rgba(88, 99, 248, 0.5);
     }
+
+    
 }

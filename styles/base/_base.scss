@@ -15,6 +15,6 @@ html {
 body {
     display: grid;
     grid-template-columns: [full-start] minmax(min-content, 1fr) [center-start] repeat(10, minmax(min-content, 12rem)) [center-end] minmax(min-content, 1fr) [full-end];
-    grid-template-rows: min-content 10vh 1fr min-content;
+    grid-template-rows: min-content 40rem 1fr min-content;
     height: 100vh;
 }

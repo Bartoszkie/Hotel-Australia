@@ -1,0 +1,20 @@
+.section-main {
+    grid-column: center-start / center-end;
+    grid-row: 3 / 4;
+ 
+    padding: 5.6rem 10.4rem;
+
+    box-shadow: $box-shadow-center-box;
+    border-radius: 4px;
+
+    height: 105%;
+    
+    position: relative;
+    z-index: 10;
+    
+    background-color: $white-color;
+    transform: translateY(-4rem);
+
+    display: flex;
+    flex-direction: column;
+}
