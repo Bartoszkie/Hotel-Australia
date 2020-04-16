@@ -54,6 +54,10 @@ body {
   margin-bottom: 5.5rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .section-header {
   grid-column: full-start / full-end;
   -ms-grid-row: 1;
@@ -99,6 +103,7 @@ body {
   font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .section-header .header__nav__link:not(:last-child) {
