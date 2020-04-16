@@ -110,7 +110,7 @@ body {
   margin-right: 3.6rem;
 }
 
-.section-carousel {
+.carousel {
   grid-column: full-start / full-end;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -118,7 +118,7 @@ body {
   position: relative;
 }
 
-.section-carousel::before {
+.carousel::before {
   content: "";
   height: 100%;
   width: 100%;
@@ -132,7 +132,7 @@ body {
   background-position: 50%;
 }
 
-.section-carousel::after {
+.carousel::after {
   content: "";
   height: 100%;
   width: 100%;
@@ -202,6 +202,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .info {
