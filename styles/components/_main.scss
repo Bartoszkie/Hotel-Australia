@@ -15,10 +15,28 @@
         padding: 3rem 10.4rem;
     }
 
+
+    @include respond(tablet-sm) {
+        max-width: 45.6rem;
+        padding: 0rem 10.4rem;
+    }
+
+    @include respond(phone-xsl) {
+        max-width: 28.8rem;
+    }
+
+    @include respond(phone-xs) {
+        max-width: 25.6rem;
+    }
+
     box-shadow: $box-shadow-center-box;
     border-radius: 4px;
 
     height: 105%;
+
+    @include respond(tablet-sm) {
+        height: 103.5%;
+    }
 
     position: relative;
     z-index: 10;

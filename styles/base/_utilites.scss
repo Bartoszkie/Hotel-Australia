@@ -5,7 +5,7 @@
 
     @include respond(tab-land-sm) {
         margin-top: 2rem;
-        margin-bottom: 3.2rem;
+        margin-bottom: 6.5rem;
     }
 
     @include respond(tab-md) {
@@ -48,8 +48,7 @@
 }
 
 
-//gridbox-card-detauls 
-.g-c-d {
+gridbox-card-detauls .g-c-d {
     @include respond(tab-md) {
         padding: 1.4rem 3.2rem 3.2rem 3.2rem !important;
     }
@@ -65,5 +64,11 @@
 .m-button-b {
     @include respond(tab-md) {
         margin-bottom: 4.5rem !important;
+    }
+}
+
+.m-button-all {
+    @include respond(tab-md) {
+        margin-bottom: 3.2rem !important;
     }
 }

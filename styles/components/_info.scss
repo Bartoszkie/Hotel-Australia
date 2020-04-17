@@ -6,6 +6,15 @@
     align-items: center;
     text-align: center;
 
+
+    @include respond(phone-xsl) {
+        width: 22.8rem;
+    }
+
+    @include respond(phone-xs) {
+        width: 19.4rem;
+    }
+
     &__heading {
         font-weight: 700;
         letter-spacing: 0;
@@ -17,6 +26,10 @@
 
             @include respond(tab-md) {
                 font-size: 2.4rem !important;
+            }
+
+            @include respond(phone-xsl) {
+                font-size: 2rem !important;
             }
         }
 

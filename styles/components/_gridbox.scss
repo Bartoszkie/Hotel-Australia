@@ -15,6 +15,19 @@
         row-gap: 3.8rem;
     }
 
+    @include respond(tablet-sm) {
+        grid-template-columns: repeat(1, 36.6rem);
+    }
+
+    @include respond(phone-xsl) {
+        grid-template-columns: repeat(1, 28.8rem);
+        row-gap: 0rem;
+    }
+
+    @include respond(phone-xs) {
+        grid-template-columns: repeat(1, 25.6rem);
+    }
+
     &__img {
         width: 100%;
     }
@@ -24,10 +37,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
+    
 
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0px 0px 10px #00000029;
+
+        // @include respond(tablet-sm) {
+        //     overflow: unset;
+        // }
+
+        @include respond(phone-xsl) {
+            box-shadow: none;
+        }
 
         &__details {
             padding: 2.15rem 4.2rem 5.4rem 4.2rem;

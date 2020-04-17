@@ -14,7 +14,7 @@
         display: flex;
         justify-content: space-between;
 
-        & > h1 {
+        &>h1 {
             color: $red_color;
             text-transform: uppercase;
         }
@@ -34,6 +34,10 @@
 
                 &:not(:last-child) {
                     margin-right: 3.6rem;
+                }
+
+                @include respond(tablet-sm) {
+                    display: none;
                 }
             }
         }

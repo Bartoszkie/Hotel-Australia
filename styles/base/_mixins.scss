@@ -15,7 +15,7 @@
         }
     }
 
-    @if $breakpoint==tab-md {
+    @if $breakpoint==tablet-sm {
         //520px
         @media only screen and (max-width: 32.5em) {
             @content;
