@@ -3,10 +3,16 @@
     grid-row: 3 / 4;
 
     padding: 5.6rem 10.4rem;
-    margin: 0 4rem;
+    margin: 0 16rem;
 
     @include respond(tab-land-sm) {
         padding: 5.4rem 4.8rem;
+        margin: 0 3.2rem;
+    }
+
+    @include respond(tab-md) {
+        max-width: 70.4rem;
+        padding: 3rem 10.4rem;
     }
 
     box-shadow: $box-shadow-center-box;
