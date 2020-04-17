@@ -12,6 +12,9 @@ html {
     box-sizing: border-box;
 }
 
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
 body {
     display: grid;
     grid-template-columns: [full-start] minmax(min-content, 1fr) [center-start] repeat(10, minmax(min-content, 12rem)) [center-end] minmax(min-content, 1fr) [full-end];

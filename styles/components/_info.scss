@@ -10,10 +10,18 @@
         font-weight: 700;
         letter-spacing: 0;
         margin-bottom: 1.2rem;
+        font-family: 'Poppins', sans-serif;
+
+        &--w436 {
+            max-width: 43.6rem;
+        }
     }
 
     &__paragraph {
         max-width: 75.2rem;
         color: rgba(35, 24, 65, 1);
+
+        font-weight: 100;
+        font-family: 'Roboto', sans-serif;
     }
 }

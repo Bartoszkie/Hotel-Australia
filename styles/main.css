@@ -39,23 +39,9 @@ body {
   margin-bottom: 7.2rem;
 }
 
-@media only screen and (max-width: 64em) {
-  .m-b-1 {
-    margin-top: 2rem;
-    margin-bottom: 3.2rem;
-  }
-}
-
 .m-b-2 {
   margin-top: 2.1rem;
   margin-bottom: 4rem;
-}
-
-@media only screen and (max-width: 64em) {
-  .m-b-2 {
-    margin-top: 2rem;
-    margin-bottom: 3.2rem;
-  }
 }
 
 .m-b-3 {
@@ -221,12 +207,14 @@ body {
 .section-footer .footer__details > h4 {
   margin-bottom: 1rem;
   color: #FFFFFF;
+  font-weight: 500;
 }
 
 .section-footer .footer__details > p {
   color: silver;
   text-align: center;
   max-width: 24rem;
+  font-weight: 100;
 }
 
 .section-main {
@@ -288,18 +276,25 @@ body {
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.info__heading--w436 {
+  max-width: 43.6rem;
 }
 
 .info__paragraph {
   max-width: 75.2rem;
   color: #231841;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
 }
 
 .gridbox {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (36.6rem)[2];
-      grid-template-columns: repeat(2, 36.6rem);
+  -ms-grid-columns: (36rem)[2];
+      grid-template-columns: repeat(2, 36rem);
   -ms-grid-rows: (61.1rem)[2];
       grid-template-rows: repeat(2, 61.1rem);
   -webkit-box-pack: center;
@@ -309,15 +304,6 @@ body {
           column-gap: 3.2rem;
   row-gap: 3.6rem;
   margin: 5.2rem 0 7.6rem;
-}
-
-@media only screen and (max-width: 64em) {
-  .gridbox {
-    -ms-grid-columns: (28.8rem)[2];
-        grid-template-columns: repeat(2, 28.8rem);
-    -ms-grid-rows: (55.7rem)[2];
-        grid-template-rows: repeat(2, 55.7rem);
-  }
 }
 
 .gridbox__img {
@@ -347,10 +333,6 @@ body {
   padding: 2.15rem 4.2rem 5.4rem 4.2rem;
 }
 
-.gridbox__card__details:nth-child(2) {
-  padding: 2.15rem 1rem 1.4rem 4.2rem;
-}
-
 @media only screen and (max-width: 64em) {
   .gridbox__card__details {
     padding: 2.15rem 3.2rem 5.4rem 3.2rem;
@@ -365,11 +347,14 @@ body {
   font-size: 1.2rem;
   color: #5863F8;
   text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
 }
 
 .gridbox__card__details__headings__heading {
   font-size: 2rem;
   color: #231841;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 .gridbox__card__details__headings__heading::after {
@@ -387,6 +372,7 @@ body {
   color: silver;
   font-size: 1.4rem;
   max-width: 27.8rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .gridbox__card__details__btn {
@@ -394,7 +380,8 @@ body {
   display: block;
   background-color: #FFFFFF;
   color: #FF4858;
-  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   font-size: 1.6rem;
   outline: none;
   border: 2px solid #FF4858;
