@@ -39,9 +39,23 @@ body {
   margin-bottom: 7.2rem;
 }
 
+@media only screen and (max-width: 64em) {
+  .m-b-1 {
+    margin-top: 2rem;
+    margin-bottom: 3.2rem;
+  }
+}
+
 .m-b-2 {
   margin-top: 2.1rem;
   margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 64em) {
+  .m-b-2 {
+    margin-top: 2rem;
+    margin-bottom: 3.2rem;
+  }
 }
 
 .m-b-3 {
@@ -108,6 +122,39 @@ body {
 
 .section-header .header__nav__link:not(:last-child) {
   margin-right: 3.6rem;
+}
+
+.section-carousel {
+  grid-column: full-start / full-end;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  position: relative;
+}
+
+.section-carousel::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("../../assets/img/JohnCleeseEricIdle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.section-carousel::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(88, 99, 248, 0.5);
 }
 
 .carousel {
@@ -178,6 +225,8 @@ body {
 
 .section-footer .footer__details > p {
   color: silver;
+  text-align: center;
+  max-width: 24rem;
 }
 
 .section-main {
@@ -186,6 +235,7 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
   padding: 5.6rem 10.4rem;
+  margin: 0 4rem;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
@@ -208,6 +258,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 64em) {
+  .section-main {
+    padding: 5.4rem 4.8rem;
+  }
 }
 
 .info {
@@ -255,6 +311,15 @@ body {
   margin: 5.2rem 0 7.6rem;
 }
 
+@media only screen and (max-width: 64em) {
+  .gridbox {
+    -ms-grid-columns: (28.8rem)[2];
+        grid-template-columns: repeat(2, 28.8rem);
+    -ms-grid-rows: (55.7rem)[2];
+        grid-template-rows: repeat(2, 55.7rem);
+  }
+}
+
 .gridbox__img {
   width: 100%;
 }
@@ -280,6 +345,16 @@ body {
 
 .gridbox__card__details {
   padding: 2.15rem 4.2rem 5.4rem 4.2rem;
+}
+
+.gridbox__card__details:nth-child(2) {
+  padding: 2.15rem 1rem 1.4rem 4.2rem;
+}
+
+@media only screen and (max-width: 64em) {
+  .gridbox__card__details {
+    padding: 2.15rem 3.2rem 5.4rem 3.2rem;
+  }
 }
 
 .gridbox__card__details__headings {
