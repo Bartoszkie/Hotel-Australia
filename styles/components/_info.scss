@@ -7,6 +7,10 @@
     text-align: center;
 
 
+    @include respond(tablet-sm) {
+        width: 37.2rem;
+    }
+
     @include respond(phone-xsl) {
         width: 22.8rem;
     }
@@ -14,6 +18,7 @@
     @include respond(phone-xs) {
         width: 19.4rem;
     }
+
 
     &__heading {
         font-weight: 700;

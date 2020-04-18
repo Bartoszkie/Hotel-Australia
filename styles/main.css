@@ -740,6 +740,12 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 32.5em) {
+  .info {
+    width: 37.2rem;
+  }
+}
+
 @media only screen and (max-width: 22.5em) {
   .info {
     width: 22.8rem;
@@ -806,14 +812,13 @@ body {
   .gridbox {
     -ms-grid-columns: (28.8rem)[2];
         grid-template-columns: repeat(2, 28.8rem);
-    row-gap: 3.8rem;
   }
 }
 
 @media only screen and (max-width: 32.5em) {
   .gridbox {
-    -ms-grid-columns: (36.6rem)[1];
-        grid-template-columns: repeat(1, 36.6rem);
+    -ms-grid-columns: (36rem)[1];
+        grid-template-columns: repeat(1, 36rem);
   }
 }
 
