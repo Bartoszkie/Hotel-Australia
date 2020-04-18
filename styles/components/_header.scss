@@ -22,7 +22,8 @@
 
         background-color: transparent;
         position: relative;
-        z-index: 100;
+        z-index: 300;
+        box-shadow: 0px 3px 6px #00000029;
 
         @media only screen and(min-width: 521.5px) {
             display: flex;
@@ -42,7 +43,7 @@
     }
 
     .header li a {
-        display: block;
+        display: inline;
         padding: 20px 20px;
         text-decoration: none;
         font-size: 1.4rem;
@@ -50,6 +51,31 @@
 
         text-transform: uppercase;
         color: $dark-grey-color;
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header li a p {
+        &::after {
+            margin-top: .1rem;
+
+            content: "";
+            width: 0%;
+            background-color: $red_color;
+            height: .2rem;
+            display: block;
+            opacity: 1;
+
+            transition: .2s ease-in-out all;
+        }
+
+        &:hover::after {
+            width: 100%;
+            opacity: 1;
+        }
     }
 
     .header .menu-btn:hover {
@@ -93,6 +119,23 @@
             padding-top: 1rem;
             transform: translateY(-17px);
         }
+
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 0;
+            top: 0;
+            width: 200%;
+
+            height: 3rem;
+            background-color: transparent;
+            border: none;
+            display: inline-block;
+            box-shadow: 0px 3px 6px #00000029;
+        }
     }
 
     /* menu icon */
@@ -105,9 +148,6 @@
         padding: 27px 20px;
         position: relative;
         user-select: none;
-
-
-        // transform: translateY(.4rem);
 
         @media only screen and (max-width: 360px) {
             padding: 26.2px 20px;
