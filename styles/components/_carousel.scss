@@ -3,40 +3,9 @@
   grid-row: 2 / 3;
   position: relative;
 
-  &::before {
-    content: "";
-    height: 100%;
-    width: 100%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-
-    background-image: url("../../assets/img/JohnCleeseEricIdle.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-  }
-
-  &::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-
-    background-color: rgba(88, 99, 248, 0.5);
-  }
-}
-
-.carousel {
-  grid-column: full-start / full-end;
-  grid-row: 2 / 3;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &::before {
     content: "";
@@ -66,5 +35,169 @@
 
     background-color: rgba(88, 99, 248, 0.5);
   }
+
+  .carousel {
+    width: 100%;
+    max-width: 1200px;
+    height: 70%;
+
+    color: $white_color;
+
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    position: relative;
+    z-index: 2;
+
+    &>&__item {
+      scroll-snap-align: start;
+    }
+
+    &__item {
+
+      font-family: 'Poppins', sans-serif;
+      margin-left: 10rem;
+      flex-shrink: 0;
+      height: 100%;
+      width: 100%;
+
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      &__caption {
+        text-transform: uppercase;
+        font-size: 1.8rem;
+      }
+
+      &__h1 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin-bottom: .13rem;
+      }
+
+      &__h2 {
+        font-size: 2.8rem;
+        font-weight: 500;
+      }
+
+      &__data {
+        font-size: 2.8rem;
+        font-weight: 100;
+      }
+
+      &__btn {
+        background-color: transparent;
+
+        border: .2rem solid $white_color;
+        border-radius: 4px;
+
+        padding: 1.3rem 3rem;
+        margin-top: 2rem;
+
+        color: $white_color;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 700;
+
+        cursor: pointer;
+      }
+
+      &__prev,
+      &__next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+
+        background-color: #fff;
+      }
+
+      &__prev {
+        left: 0;
+      }
+
+      &__next {
+        right: 22rem;
+      }
+    }
+  }
+
+  .carousel__dots {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 4rem;
+
+    z-index: 301;
+
+    width: 100%;
+    background-color: transparent;
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__dot {
+      border-radius: 50%;
+
+      width: 1.2rem;
+      height: 1.2rem;
+
+      background-color: $dark-grey-color;
+
+      margin-left: 2.4rem;
+
+      &:focus,
+      &:active {
+        background-color: $medium-grey-color;
+      }
+    }
+  }
 }
 
+// .carousel {
+//   grid-column: full-start / full-end;
+//   grid-row: 2 / 3;
+//   position: relative;
+
+//   &::before {
+//     content: "";
+//     height: 100%;
+//     width: 100%;
+
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 1;
+
+//     background-image: url("../../assets/img/JohnCleeseEricIdle.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: 50%;
+//   }
+
+//   &::after {
+//     content: "";
+//     height: 100%;
+//     width: 100%;
+
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 1;
+
+//     background-color: rgba(88, 99, 248, 0.5);
+//   }
+// }

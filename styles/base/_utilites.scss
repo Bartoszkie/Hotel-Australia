@@ -42,6 +42,12 @@
     }
 }
 
+.m-r-0 {
+    // @media only screen and (min-width: 1024px) {
+        margin-right: 0 !important;
+    // }
+}
+
 //text
 .text-left {
     text-align: left;
@@ -68,10 +74,12 @@ gridbox-card-detauls .g-c-d {
 //custom height {
 .h-15 {
     height: 115% !important;
+    transform: translateY(-3rem) !important;
 }
 
 .h-109 {
     height: 109% !important;
+    transform: translateY(-2.5rem) !important;
 }
 
 //margin buttons 

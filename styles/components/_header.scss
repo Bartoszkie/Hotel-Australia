@@ -23,12 +23,26 @@
         background-color: transparent;
         position: relative;
         z-index: 300;
-        box-shadow: 0px 3px 6px #00000029;
+        // box-shadow: 0px 3px 6px #00000029;
+
+
+        @media only screen and (max-width: 1024px) {
+            padding: 0 12.8rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+            padding: 0 8rem 0 12.8rem;
+        }
 
         @media only screen and(min-width: 521.5px) {
             display: flex;
             justify-content: space-between;
         }
+
+        @media only screen and (max-width: 521.5px) {
+            padding: 0;
+        }
+
     }
 
     .header ul {
@@ -44,9 +58,9 @@
 
     .header li a {
         display: inline;
-        padding: 20px 20px;
+        padding: 1.9rem 0;
         text-decoration: none;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 700;
 
         text-transform: uppercase;
@@ -56,6 +70,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+
+        margin-right: 3.6rem;
+
+        @media only screen and (max-width: 521.5px) {
+            margin-right: 0rem;
+        }
     }
 
     .header li a p {
@@ -86,16 +107,22 @@
         display: block;
         float: left;
         padding: 12px 0 0 0;
-        margin-left: 10rem;
+        // margin-left: 10rem;
         // margin-top: .5rem;
 
         font-size: 2.4rem !important;
+
+        text-transform: uppercase;
         text-decoration: none;
         color: $red_color;
         font-weight: 700;
 
-        @media only screen and (max-width: 1013px) {
-            margin-left: 5rem;
+        @media only screen and (max-width: 521px) {
+            margin-left: 6.4rem;
+        }
+
+        @media only screen and (max-width: 360px) {
+            margin-left: 3.2rem;
         }
     }
 
@@ -106,11 +133,11 @@
         max-height: 0;
         transition: max-height 0.2s ease-out;
 
-        margin-right: 10rem;
+        // margin-right: 10rem;
 
-        @media only screen and (max-width: 1013px) {
-            margin-right: 5rem;
-        }
+        // @media only screen and (max-width: 1013px) {
+        //     margin-right: 5rem;
+        // }
 
         @media only screen and (max-width: 521px) {
             text-align: center;
@@ -123,6 +150,10 @@
         position: relative;
 
         &::before {
+            @media only screen and (min-width: 521.5px) {
+                display: none;
+            }
+
             content: "";
             position: absolute;
             transform: translate(-50%, -50%);
@@ -149,9 +180,20 @@
         position: relative;
         user-select: none;
 
+        @media only screen and (max-width: 521px) {
+            margin-right: 6.4rem;
+            padding: 25px 20px;
+        }
+
         @media only screen and (max-width: 360px) {
-            padding: 26.2px 20px;
+            padding: 24.9px 20px;
             margin-right: 3.4rem;
+        }
+
+        
+        @media only screen and (max-width: 360px) {
+            padding: 24.9px 20px;
+            margin-right: 3.2rem;
         }
 
         margin-right: .7rem;
@@ -220,7 +262,7 @@
         }
 
         .header li a {
-            padding: 20px 30px;
+            // padding: 20px 30px;
         }
 
         .header .menu {
