@@ -10,11 +10,25 @@
 .section-carousel {
   grid-column: full-start / full-end;
   grid-row: 2 / 3;
-  background-color: rgba(3, 79, 151, 0.384);
 
-  // background-position: center;
-  // background-size: contain;
-  // background-image: url("../../assets/img/JohnCleeseEricIdle.png");
+  position: relative;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/img/JohnCleeseEricIdle.png");
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(88, 99, 248, 0.5);
+  }
 
   .swiper-container {
     z-index: 200;
