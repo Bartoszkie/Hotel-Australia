@@ -7,6 +7,27 @@
   }
 }
 
+.swiper-pagination {
+  display: none;
+
+ 
+  @media only screen and (max-width: 520px) {
+    display: block;
+  }
+
+  transform: translateY(-5rem) !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+  height: 1.2rem !important;
+  width: 1.2rem !important;
+
+  &:not(:last-child) {
+    margin-right: 2.4rem !important;
+  }
+}
+
 .section-carousel {
   grid-column: full-start / full-end;
   grid-row: 2 / 3;
@@ -55,6 +76,10 @@
           @media only screen and (max-width: 520px) {
             align-items: flex-start;
             margin-left: 5rem;
+
+            & > * {
+              transform: translateY(-2rem);
+            }
           }
 
           &__paragraph {
