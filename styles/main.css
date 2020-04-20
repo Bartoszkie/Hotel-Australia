@@ -629,7 +629,7 @@ body {
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 1.2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 4rem;
 }
 
@@ -651,6 +651,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 22.5em) {
+  .info__heading--w436 {
+    line-height: 2.2rem;
+  }
+}
+
 @media only screen and (max-width: 48em) {
   .info__heading {
     font-size: 2rem;
@@ -661,7 +667,7 @@ body {
   max-width: 75.2rem;
   color: #231841;
   font-weight: 100;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.9rem;
 }
 
@@ -675,6 +681,12 @@ body {
 @media only screen and (max-width: 32.5em) {
   .info__paragraph {
     width: 38.8rem;
+  }
+}
+
+@media only screen and (max-width: 22.5em) {
+  .info__paragraph {
+    width: 22.4rem;
   }
 }
 
@@ -711,6 +723,7 @@ body {
     -ms-grid-columns: (28.8rem)[1];
         grid-template-columns: repeat(1, 28.8rem);
     row-gap: 0rem;
+    margin: 5.2rem 0 5.4rem 0;
   }
 }
 

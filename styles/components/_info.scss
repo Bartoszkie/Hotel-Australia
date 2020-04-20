@@ -1,71 +1,77 @@
 .info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
+  @include respond(tablet-sm) {
+    width: 37.2rem;
+  }
+
+  @include respond(phone-xsl) {
+    width: 22.8rem;
+  }
+
+  @include respond(phone-xs) {
+    width: 19.4rem;
+  }
+
+  &__heading {
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 4rem;
 
     @include respond(tablet-sm) {
-        width: 37.2rem;
+      line-height: 2.2rem;
+      margin-bottom: 3.2rem;
+    }
+
+    &--w436 {
+      max-width: 43.6rem;
+
+      // @include respond(tab-md) {
+      //     font-size: 2.4rem !important;
+      // }
+
+      line-height: 2.6rem;
+
+      @include respond(phone-xsl) {
+        font-size: 2rem !important;
+      }
+
+      @include respond(phone-xsl) {
+        line-height: 2.2rem;
+      }
+    }
+
+    @include respond(tab-md) {
+      font-size: 2rem;
+    }
+  }
+
+  &__paragraph {
+    max-width: 75.2rem;
+    color: rgba(35, 24, 65, 1);
+
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.9rem;
+
+    @include respond(tab-md) {
+      font-size: 1.4rem;
+      width: 64rem;
+    }
+
+    @include respond(tablet-sm) {
+      width: 38.8rem;
     }
 
     @include respond(phone-xsl) {
-        width: 22.8rem;
+      width: 22.4rem;
     }
-
-    @include respond(phone-xs) {
-        width: 19.4rem;
-    }
-
-
-    &__heading {
-        font-weight: 700;
-        letter-spacing: 0;
-        margin-bottom: 1.2rem;
-        font-family: 'Poppins', sans-serif;
-        line-height: 4rem;
-
-        @include respond(tablet-sm) {
-            line-height: 2.2rem;
-            margin-bottom: 3.2rem;
-        }
-
-        &--w436 {
-            max-width: 43.6rem;
-
-            // @include respond(tab-md) {
-            //     font-size: 2.4rem !important;
-            // }
-
-            line-height: 2.6rem;
-
-            @include respond(phone-xsl) {
-                font-size: 2rem !important;
-            }
-        }
-
-        @include respond(tab-md) {
-            font-size: 2rem;
-        }
-    }
-
-    &__paragraph {
-        max-width: 75.2rem;
-        color: rgba(35, 24, 65, 1);
-
-        font-weight: 100;
-        font-family: 'Roboto', sans-serif;
-        line-height: 1.9rem;
-
-        @include respond(tab-md) {
-            font-size: 1.4rem;
-            width: 64rem;
-        }
-
-        @include respond(tablet-sm) {
-            width: 38.8rem;
-        }
-    }
+  }
 }

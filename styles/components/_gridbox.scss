@@ -17,7 +17,8 @@
 
     @include respond(phone-xsl) {
         grid-template-columns: repeat(1, 28.8rem);
-        row-gap: 0rem;
+        row-gap: 0rem; 
+        margin: 5.2rem 0 5.4rem 0;
     }
 
     @include respond(phone-xs) {
