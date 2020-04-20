@@ -1,7 +1,7 @@
 //MARGINS FOR CARD_STORIES
 .m-b-1 {
   margin-top: 2.1rem;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
 
   @include respond(tab-land-sm) {
     margin-top: 2rem;
@@ -23,7 +23,7 @@
 
   @include respond(tab-land-sm) {
     margin-top: 2rem;
-    margin-bottom: 3.2rem;
+    margin-bottom: 5.2rem;
   }
 }
 
