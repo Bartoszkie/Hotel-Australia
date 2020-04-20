@@ -27,6 +27,11 @@
         font-family: 'Poppins', sans-serif;
         line-height: 4rem;
 
+        @include respond(tablet-sm) {
+            line-height: 2.2rem;
+            margin-bottom: 3.2rem;
+        }
+
         &--w436 {
             max-width: 43.6rem;
 
@@ -57,6 +62,10 @@
         @include respond(tab-md) {
             font-size: 1.4rem;
             width: 64rem;
+        }
+
+        @include respond(tablet-sm) {
+            width: 38.8rem;
         }
     }
 }

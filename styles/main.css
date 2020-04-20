@@ -633,6 +633,13 @@ body {
   line-height: 4rem;
 }
 
+@media only screen and (max-width: 32.5em) {
+  .info__heading {
+    line-height: 2.2rem;
+    margin-bottom: 3.2rem;
+  }
+}
+
 .info__heading--w436 {
   max-width: 43.6rem;
   line-height: 2.6rem;
@@ -662,6 +669,12 @@ body {
   .info__paragraph {
     font-size: 1.4rem;
     width: 64rem;
+  }
+}
+
+@media only screen and (max-width: 32.5em) {
+  .info__paragraph {
+    width: 38.8rem;
   }
 }
 
