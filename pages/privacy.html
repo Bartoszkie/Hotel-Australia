@@ -7,6 +7,7 @@
     <title>Aussie Luxe - Privacy</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/swiper.min.css">
 </head>
 
 <body>
@@ -91,46 +92,66 @@
         </div>
 
 
-    <section class="section-main padding-zero h-109">
-        <div class="info">
-            <h1 class="h1 info__heading">
-                Privacy Policy
-            </h1>
-            <p class="p info__paragraph text-left">
-                The privacy of customers and visitors is important to us. Therefore we require all purchasers to provide
-                a name, email address, credit-card information, physical address, and phone number. This information is
-                used only to process orders, confirm orders and improve our customers’ shopping experience.
-                <br><br>
-                Purchasers
-                are also required to create a password to limit access to their data and our ordering system. Persons
-                that fail to create a password will not be allowed to use our online ordering system.
-                <br><br>
-                Visitors to our
-                site are never asked to provide any information. Anybody is free to peruse our catalogue and view our
-                selection of pokies.
-                <br><br>
-                To ensure that our customers’ data remains private we employ secure servers that
-                utilize advanced encryption and firewall technologies. Please contact us immediately if any breach of
-                privacy or security is suspected.
-                <br><br>
-                This site employs cookies to keep track of shopping sessions and
-                personalize the shopping car. Please be advised that security software and firewalls may interfere with
-                the operation of our cookies.
-            </p>
-        </div>
-    </section>
-
-    <section class="section-footer">
-        <footer class="footer">
-            <div class="footer__details">
-                <h4 class="h4"> 2020 © Hot Australia</h4>
-                <p class="p p--grey">
-                    Independent Entertainment Guide 4 Lawrence St, Freshwater NSW 2096 Phone: (02) 9939
-                    5560
+        <section class="section-main padding-zero h-109">
+            <div class="info">
+                <h1 class="h1 info__heading">
+                    Privacy Policy
+                </h1>
+                <p class="p info__paragraph text-left">
+                    The privacy of customers and visitors is important to us. Therefore we require all purchasers to
+                    provide
+                    a name, email address, credit-card information, physical address, and phone number. This information
+                    is
+                    used only to process orders, confirm orders and improve our customers’ shopping experience.
+                    <br><br>
+                    Purchasers
+                    are also required to create a password to limit access to their data and our ordering system.
+                    Persons
+                    that fail to create a password will not be allowed to use our online ordering system.
+                    <br><br>
+                    Visitors to our
+                    site are never asked to provide any information. Anybody is free to peruse our catalogue and view
+                    our
+                    selection of pokies.
+                    <br><br>
+                    To ensure that our customers’ data remains private we employ secure servers that
+                    utilize advanced encryption and firewall technologies. Please contact us immediately if any breach
+                    of
+                    privacy or security is suspected.
+                    <br><br>
+                    This site employs cookies to keep track of shopping sessions and
+                    personalize the shopping car. Please be advised that security software and firewalls may interfere
+                    with
+                    the operation of our cookies.
                 </p>
             </div>
-        </footer>
-    </section>
+        </section>
+
+        <section class="section-footer">
+            <footer class="footer">
+                <div class="footer__details">
+                    <h4 class="h4"> 2020 © Hot Australia</h4>
+                    <p class="p p--grey">
+                        Independent Entertainment Guide 4 Lawrence St, Freshwater NSW 2096 Phone: (02) 9939
+                        5560
+                    </p>
+                </div>
+            </footer>
+        </section>
+        <script src="../styles/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
 </body>
 
 </html>

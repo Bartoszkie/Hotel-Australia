@@ -34,10 +34,10 @@
 
   position: relative;
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../assets/img/JohnCleeseEricIdle.png");
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-image: url("../assets/img/JohnCleeseEricIdle.png");
 
   &::before {
     content: "";
@@ -54,7 +54,7 @@
   .swiper-container {
     z-index: 200;
     height: 100%;
-    max-width: 1200px;
+    // max-width: 1200px;
 
     .swiper-wrapper {
       height: 100%;

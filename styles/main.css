@@ -497,10 +497,6 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
   position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../assets/img/JohnCleeseEricIdle.png");
 }
 
 .section-carousel::before {
@@ -517,7 +513,6 @@ body {
 .section-carousel .swiper-container {
   z-index: 200;
   height: 100%;
-  max-width: 1200px;
 }
 
 .section-carousel .swiper-container .swiper-wrapper {
