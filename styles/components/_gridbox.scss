@@ -34,13 +34,8 @@
         justify-content: center;
         align-items: center;
 
-
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0px 0px 10px #00000029;
-
-        // @include respond(tablet-sm) {
-        //     overflow: unset;
-        // }
 
         @include respond(phone-xsl) {
             box-shadow: none;
@@ -65,6 +60,8 @@
                     color: $blue_color;
                     text-transform: uppercase;
                     font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    line-height: 1.9rem;
                 }
 
                 &__heading {
@@ -72,6 +69,7 @@
                     color: $purple-color;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 500;
+                    line-height: 3.3rem;
 
                     &::after {
                         margin-top: 1.55rem;
@@ -83,7 +81,7 @@
 
                         background-color: $blue_color;
                         width: 8rem;
-                        height: .1999rem;
+                        height: .2rem;
                     }
                 }
             }
@@ -91,7 +89,9 @@
             &__stories {
                 color: $medium-grey-color;
                 font-size: 1.4rem;
+                line-height: 2rem;
                 max-width: 27.8rem;
+                font-weight: 100;
                 font-family: 'Roboto', sans-serif;
             }
 
