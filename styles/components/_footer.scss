@@ -10,12 +10,17 @@
         &__details {
             & > h4 {
                 margin-bottom: 1rem;
-                color: $white_color;
-                font-weight: 500;
+                color: rgba(255, 255, 255, 0.7);
+                font-weight: 400;
+                font-size: 1.2rem;
+
+                // @include respond(tab-land-sm) {
+                //     font-weight: 400;
+                // }
             }
 
             & > p {
-                color: rgba(255, 255, 255, 0.5);
+                color: rgba(255, 255, 255, 0.4);
                 text-align: center;
                 max-width: 24rem;
                 font-weight: 100;
