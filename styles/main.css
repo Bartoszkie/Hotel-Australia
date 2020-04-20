@@ -46,6 +46,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 20em) {
+  .m-b-1 {
+    margin-bottom: 3.2rem;
+  }
+}
+
 .m-b-2 {
   margin-top: 2.1rem;
   margin-bottom: 4rem;
@@ -83,6 +89,12 @@ body {
 @media only screen and (max-width: 48em) {
   .m-b-4 {
     margin-bottom: 5.3rem;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .m-b-4 {
+    margin-bottom: 3.2rem;
   }
 }
 
@@ -480,6 +492,12 @@ body {
   padding: 10.2rem 7.2rem 3.4rem 7.2rem;
 }
 
+@media only screen and (max-width: 20em) {
+  .section-footer .footer {
+    padding: 10.2rem 1rem 3.4rem 1rem;
+  }
+}
+
 .section-footer .footer__details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -681,6 +699,12 @@ body {
 @media only screen and (max-width: 22.5em) {
   .info__paragraph {
     width: 22.4rem;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .info__paragraph {
+    width: 19.4rem;
   }
 }
 

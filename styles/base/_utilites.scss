@@ -1,100 +1,106 @@
 //MARGINS FOR CARD_STORIES
 .m-b-1 {
-    margin-top: 2.1rem;
-    margin-bottom: 8rem;
+  margin-top: 2.1rem;
+  margin-bottom: 8rem;
 
-    @include respond(tab-land-sm) {
-        margin-top: 2rem;
-        margin-bottom: 7.1rem;
-    }
+  @include respond(tab-land-sm) {
+    margin-top: 2rem;
+    margin-bottom: 7.1rem;
+  }
 
-    // @include respond(tab-md) {
-    //     margin-bottom: 4.79rem;
-    // }
+  // @include respond(tab-md) {
+  //     margin-bottom: 4.79rem;
+  // }
+
+  @include respond(phone-xs) {
+    margin-bottom: 3.2rem;
+  }
 }
 
 .m-b-2 {
-    margin-top: 2.1rem;
-    margin-bottom: 4rem;
+  margin-top: 2.1rem;
+  margin-bottom: 4rem;
 
-    @include respond(tab-land-sm) {
-        margin-top: 2rem;
-        margin-bottom: 3.2rem;
-    }
+  @include respond(tab-land-sm) {
+    margin-top: 2rem;
+    margin-bottom: 3.2rem;
+  }
 }
 
 .m-b-3 {
-    margin-top: 2.1rem;
-    margin-bottom: 3.79rem;
+  margin-top: 2.1rem;
+  margin-bottom: 3.79rem;
 
-    @include respond(tab-land-sm) {
-        margin-bottom: 3.5rem;
-    }
+  @include respond(tab-land-sm) {
+    margin-bottom: 3.5rem;
+  }
 
-    @include respond(tab-md) {
-        margin-bottom: 3.5rem;
-    }
+  @include respond(tab-md) {
+    margin-bottom: 3.5rem;
+  }
 }
 
 .m-b-4 {
-    margin-top: 2.1rem;
-    margin-bottom: 5.5rem;
+  margin-top: 2.1rem;
+  margin-bottom: 5.5rem;
 
-    @include respond(tab-md) {
-        margin-bottom: 5.3rem;
+  @include respond(tab-md) {
+    margin-bottom: 5.3rem;
+  }
 
-    }
+  @include respond(phone-xs) {
+    margin-bottom: 3.2rem;
+  }
 }
 
 .m-r-0 {
-    // @media only screen and (min-width: 1024px) {
-        margin-right: 0 !important;
-    // }
+  // @media only screen and (min-width: 1024px) {
+  margin-right: 0 !important;
+  // }
 }
 
 //text
 .text-left {
-    text-align: left;
+  text-align: left;
 }
 
-
 gridbox-card-detauls .g-c-d {
-    @include respond(tab-md) {
-        padding: 1.4rem 3.2rem 3.2rem 3.2rem !important;
-    }
+  @include respond(tab-md) {
+    padding: 1.4rem 3.2rem 3.2rem 3.2rem !important;
+  }
 }
 
 .card-padding-custom {
-    @include respond(tab-md) {
-        padding: 2.15rem 3.2rem 0rem 3.2rem !important;
-    }
+  @include respond(tab-md) {
+    padding: 2.15rem 3.2rem 0rem 3.2rem !important;
+  }
 }
 
 //paddings for subpages
 .padding-zero {
-    padding: 5.4rem 4.8rem !important;
+  padding: 5.4rem 4.8rem !important;
 }
 
 //custom height {
 .h-15 {
-    height: 115% !important;
-    transform: translateY(-3rem) !important;
+  height: 115% !important;
+  transform: translateY(-3rem) !important;
 }
 
 .h-109 {
-    height: 109% !important;
-    transform: translateY(-2.5rem) !important;
+  height: 109% !important;
+  transform: translateY(-2.5rem) !important;
 }
 
-//margin buttons 
+//margin buttons
 .m-button-b {
-    @include respond(tab-md) {
-        margin-bottom: 3.2rem !important;
-    }
+  @include respond(tab-md) {
+    margin-bottom: 3.2rem !important;
+  }
 }
 
 .m-button-all {
-    // @include respond(tab-md) {
-    //     margin-bottom: 3.2rem !important;
-    // }
+  // @include respond(tab-md) {
+  //     margin-bottom: 3.2rem !important;
+  // }
 }

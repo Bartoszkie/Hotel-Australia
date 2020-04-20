@@ -68,5 +68,9 @@
     @include respond(phone-xsl) {
       width: 22.4rem;
     }
+
+    @include respond(phone-xs) {
+      width: 19.4rem;
+    }
   }
 }
