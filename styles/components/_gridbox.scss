@@ -1,123 +1,130 @@
 .gridbox {
-    display: grid;
-    grid-template-columns: repeat(2, 36rem);
+  display: grid;
+  grid-template-columns: repeat(2, 36rem);
+  justify-content: center;
+  column-gap: 3.2rem;
+  row-gap: 3.6rem;
+
+  margin: 5.2rem 0 7.6rem;
+
+  @include respond(tab-md) {
+    grid-template-columns: repeat(2, 28.8rem);
+  }
+
+  @include respond(tablet-sm) {
+    grid-template-columns: repeat(1, 36rem);
+  }
+
+  @include respond(phone-xsl) {
+    grid-template-columns: repeat(1, 28.8rem);
+    row-gap: 0rem;
+    margin: 5.2rem 0 5.4rem 0;
+  }
+
+  @include respond(phone-xs) {
+    grid-template-columns: repeat(1, 25.6rem);
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    column-gap: 3.2rem;
-    row-gap: 3.6rem;
+    align-items: center;
 
-    margin: 5.2rem 0 7.6rem;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 0px 10px #00000029;
 
-    @include respond(tab-md) {
-        grid-template-columns: repeat(2, 28.8rem);
-    }
-
-    @include respond(tablet-sm) {
-        grid-template-columns: repeat(1, 36rem);
+    @include respond(phone-xsl) {
+      box-shadow: none;
     }
 
     @include respond(phone-xsl) {
-        grid-template-columns: repeat(1, 28.8rem);
-        row-gap: 0rem; 
-        margin: 5.2rem 0 5.4rem 0;
+      border-radius: 0px 0px 0px 0px;
     }
 
-    @include respond(phone-xs) {
-        grid-template-columns: repeat(1, 25.6rem);
-    }
+    &__details {
+      padding: 2.15rem 4.2rem 5.4rem 4.2rem;
 
-    &__img {
-        width: 100%;
-    }
+      @include respond(tab-land-sm) {
+        padding: 2.15rem 3.2rem 5.4rem 3.2rem;
+      }
 
-    &__card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      @include respond(tab-md) {
+        padding: 2.15rem 3.2rem 3.2rem 3.2rem;
+      }
 
-        border-radius: 0px 0px 4px 4px;
-        box-shadow: 0px 0px 10px #00000029;
+      &__headings {
+        text-align: center;
 
-        @include respond(phone-xsl) {
-            box-shadow: none;
+        &__paragraph {
+          font-size: 1.2rem;
+          color: $blue_color;
+          text-transform: uppercase;
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+          line-height: 1.9rem;
         }
 
-        @include respond(phone-xsl) {
-            border-radius: 0px 0px 0px 0px;
+        &__heading {
+          font-size: 2rem;
+          color: $purple-color;
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+          line-height: 3.3rem;
+
+          &::after {
+            margin-top: 1.55rem;
+            margin-left: auto;
+            margin-right: auto;
+
+            content: "";
+            display: block;
+
+            background-color: $blue_color;
+            width: 8rem;
+            height: 0.2rem;
+          }
         }
+      }
 
-        &__details {
-            padding: 2.15rem 4.2rem 5.4rem 4.2rem;
+      &__stories {
+        color: $medium-grey-color;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        max-width: 27.8rem;
+        font-weight: 100;
+        font-family: "Roboto", sans-serif;
+      }
 
-            @include respond(tab-land-sm) {
-                padding: 2.15rem 3.2rem 5.4rem 3.2rem;
-            }
+      &__btn {
+        margin: 0 auto;
+        display: block;
 
-            @include respond(tab-md) {
-                padding: 2.15rem 3.2rem 3.2rem 3.2rem;
-            }
+        background-color: $white_color;
+        color: $red-color;
 
-            &__headings {
-                text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 1.6rem;
 
-                &__paragraph {
-                    font-size: 1.2rem;
-                    color: $blue_color;
-                    text-transform: uppercase;
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: 500;
-                    line-height: 1.9rem;
-                }
+        outline: none;
+        border: 2px solid $red-color;
+        border-radius: 4px;
 
-                &__heading {
-                    font-size: 2rem;
-                    color: $purple-color;
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: 500;
-                    line-height: 3.3rem;
+        padding: 1.2rem 3.3rem;
+        text-align: center;
 
-                    &::after {
-                        margin-top: 1.55rem;
-                        margin-left: auto;
-                        margin-right: auto;
+        transition: 0.2s ease-in-out all;
 
-                        content: "";
-                        display: block;
-
-                        background-color: $blue_color;
-                        width: 8rem;
-                        height: .2rem;
-                    }
-                }
-            }
-
-            &__stories {
-                color: $medium-grey-color;
-                font-size: 1.4rem;
-                line-height: 2rem;
-                max-width: 27.8rem;
-                font-weight: 100;
-                font-family: 'Roboto', sans-serif;
-            }
-
-            &__btn {
-                margin: 0 auto;
-                display: block;
-
-                background-color: $white_color;
-                color: $red-color;
-
-                font-family: 'Poppins', sans-serif;
-                font-weight: 400;
-                font-size: 1.6rem;
-
-                outline: none;
-                border: 2px solid $red-color;
-                border-radius: 4px;
-
-                padding: 1.2rem 3.3rem;
-                text-align: center;
-            }
+        &:hover {
+          background-color: $red-color;
+          color: $white_color;
         }
+      }
     }
+  }
 }

@@ -239,6 +239,7 @@ body {
 @media only screen and (max-width: 521.5px) {
   .section-header .header li a {
     margin-right: 0rem;
+    padding: 1.6rem 0;
   }
 }
 
@@ -302,8 +303,8 @@ body {
     text-align: center;
     margin-right: 0;
     padding-top: 1rem;
-    -webkit-transform: translateY(-17px);
-            transform: translateY(-17px);
+    -webkit-transform: translateY(-70px);
+            transform: translateY(-70px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -311,9 +312,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -349,6 +350,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  z-index: 200;
   margin-right: 0.7rem;
 }
 
@@ -400,9 +402,26 @@ body {
   display: none;
 }
 
+.section-header .first-child-mt {
+  margin-top: 0rem;
+}
+
+.section-header .last-child-mb {
+  margin-bottom: 0rem;
+}
+
 .section-header .header .menu-btn:checked ~ .menu {
   max-height: 240px;
-  height: 210px;
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+}
+
+.section-header .header .menu-btn:checked ~ .menu .first-child-mt {
+  margin-top: 3.2rem;
+}
+
+.section-header .header .menu-btn:checked ~ .menu .last-child-mb {
+  margin-bottom: 3.2rem;
 }
 
 .section-header .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -812,7 +831,7 @@ body {
   font-size: 1.2rem;
   color: #5863F8;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: 1.9rem;
 }
@@ -820,7 +839,7 @@ body {
 .gridbox__card__details__headings__heading {
   font-size: 2rem;
   color: #231841;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: 3.3rem;
 }
@@ -833,7 +852,7 @@ body {
   display: block;
   background-color: #5863F8;
   width: 8rem;
-  height: .2rem;
+  height: 0.2rem;
 }
 
 .gridbox__card__details__stories {
@@ -842,7 +861,7 @@ body {
   line-height: 2rem;
   max-width: 27.8rem;
   font-weight: 100;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .gridbox__card__details__btn {
@@ -850,7 +869,7 @@ body {
   display: block;
   background-color: #FFFFFF;
   color: #FF4858;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   outline: none;
@@ -858,6 +877,13 @@ body {
   border-radius: 4px;
   padding: 1.2rem 3.3rem;
   text-align: center;
+  -webkit-transition: 0.2s ease-in-out all;
+  transition: 0.2s ease-in-out all;
+}
+
+.gridbox__card__details__btn:hover {
+  background-color: #FF4858;
+  color: #FFFFFF;
 }
 
 #menuToggle {

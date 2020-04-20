@@ -71,6 +71,7 @@
     margin-right: 3.6rem;
     @media only screen and (max-width: 521.5px) {
       margin-right: 0rem;
+      padding: 1.6rem 0;
     }
   }
 
@@ -132,22 +133,16 @@
     max-height: 0;
     transition: max-height 0.2s ease-out;
 
-    // margin-right: 10rem;
-
-    // @media only screen and (max-width: 1013px) {
-    //     margin-right: 5rem;
-    // }
-
     @media only screen and (max-width: 521px) {
       text-align: center;
 
       margin-right: 0;
       padding-top: 1rem;
-      transform: translateY(-17px);
+      transform: translateY(-70px);
 
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
     }
 
     position: relative;
@@ -182,6 +177,7 @@
     padding: 27px 20px;
     position: relative;
     user-select: none;
+    z-index: 200;
 
     @media only screen and (max-width: 521px) {
       margin-right: 6.4rem;
@@ -229,10 +225,27 @@
   .header .menu-btn {
     display: none;
   }
+  
+  .first-child-mt {
+      margin-top: 0rem;
+  }
+
+  .last-child-mb {
+      margin-bottom: 0rem;
+  }
 
   .header .menu-btn:checked ~ .menu {
     max-height: 240px;
-    height: 210px;
+    transform: translateY(-.3rem);
+    // height: 168px;
+  }
+
+  .header .menu-btn:checked ~ .menu .first-child-mt {
+    margin-top: 3.2rem;
+  }
+
+  .header .menu-btn:checked ~ .menu .last-child-mb {
+    margin-bottom: 3.2rem;
   }
 
   .header .menu-btn:checked ~ .menu-icon .navicon {
