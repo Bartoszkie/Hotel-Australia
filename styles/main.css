@@ -272,7 +272,8 @@ body {
 
 @media only screen and (max-width: 360px) {
   .section-header .header .logo {
-    margin-left: 3.2rem;
+    margin-left: 5.2rem;
+    padding: 12.2px 0 0 0;
   }
 }
 
@@ -349,14 +350,7 @@ body {
 @media only screen and (max-width: 360px) {
   .section-header .header .menu-icon {
     padding: 24.9px 20px;
-    margin-right: 3.4rem;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .section-header .header .menu-icon {
-    padding: 24.9px 20px;
-    margin-right: 3.2rem;
+    margin-right: 4.4rem;
   }
 }
 
@@ -761,6 +755,12 @@ body {
   .gridbox__card {
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 22.5em) {
+  .gridbox__card {
+    border-radius: 0px 0px 0px 0px;
   }
 }
 
