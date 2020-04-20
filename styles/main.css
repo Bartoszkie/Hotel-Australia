@@ -20,9 +20,9 @@ body {
   -ms-grid-columns: [full-start] minmax(min-content, 1fr) [center-start] (minmax(min-content, 12rem))[10] [center-end] minmax(min-content, 1fr) [full-end];
       grid-template-columns: [full-start] minmax(-webkit-min-content, 1fr) [center-start] repeat(10, minmax(-webkit-min-content, 12rem)) [center-end] minmax(-webkit-min-content, 1fr) [full-end];
       grid-template-columns: [full-start] minmax(min-content, 1fr) [center-start] repeat(10, minmax(min-content, 12rem)) [center-end] minmax(min-content, 1fr) [full-end];
-  -ms-grid-rows: min-content 40rem .8fr min-content;
-      grid-template-rows: -webkit-min-content 40rem .8fr -webkit-min-content;
-      grid-template-rows: min-content 40rem .8fr min-content;
+  -ms-grid-rows: min-content 40vh .8fr min-content;
+      grid-template-rows: -webkit-min-content 40vh .8fr -webkit-min-content;
+      grid-template-rows: min-content 40vh .8fr min-content;
   height: 100vh;
 }
 
@@ -491,12 +491,57 @@ body {
   margin-right: 2.4rem !important;
 }
 
+.padding-zero-null {
+  padding: 0 5rem !important;
+}
+
+.bacgrkound-1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/img/crowncasinomelbourne@2x.png") !important;
+}
+
 .section-carousel {
   grid-column: full-start / full-end;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/img/JohnCleeseEricIdle.png");
+  overflow: hidden;
+}
+
+.section-carousel__info {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2000;
+  width: 100%;
+}
+
+@media only screen and (max-width: 360px) {
+  .section-carousel__info {
+    padding-left: 10rem;
+  }
+}
+
+.section-carousel__p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.section-carousel__h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 5.3rem;
 }
 
 .section-carousel::before {
@@ -513,6 +558,7 @@ body {
 .section-carousel .swiper-container {
   z-index: 200;
   height: 100%;
+  max-width: 1200px;
 }
 
 .section-carousel .swiper-container .swiper-wrapper {
@@ -749,6 +795,10 @@ body {
   }
 }
 
+.m-t-p {
+  margin-top: 2rem;
+}
+
 .info {
   width: 100%;
   display: -webkit-box;
@@ -765,6 +815,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.info__img {
+  width: 100%;
+  max-width: 51.2rem;
+  max-height: 28.8rem;
+  border-radius: 0;
 }
 
 @media only screen and (max-width: 32.5em) {
@@ -1006,6 +1063,7 @@ body {
   border-radius: 4px;
   padding: 1.2rem 3.3rem;
   text-align: center;
+  text-decoration: none;
   -webkit-transition: 0.2s ease-in-out all;
   transition: 0.2s ease-in-out all;
 }

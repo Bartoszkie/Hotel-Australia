@@ -1,3 +1,7 @@
+.m-t-p {
+  margin-top: 2rem;
+}
+
 .info {
   width: 100%;
   display: flex;
@@ -5,6 +9,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  &__img {
+    width: 100%;
+    max-width: 51.2rem;
+    max-height: 28.8rem;
+
+    border-radius: 0;
+  }
 
   @include respond(tablet-sm) {
     width: 37.2rem;

@@ -28,16 +28,56 @@
   }
 }
 
+.padding-zero-null {
+  padding: 0 5rem !important;
+}
+
+.bacgrkound-1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/img/crowncasinomelbourne@2x.png") !important;
+
+}
+
 .section-carousel {
   grid-column: full-start / full-end;
   grid-row: 2 / 3;
 
   position: relative;
 
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-image: url("../assets/img/JohnCleeseEricIdle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/img/JohnCleeseEricIdle.png");
+
+  overflow: hidden;
+
+  &__info {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+
+    width: 100%;
+    @media only screen and (max-width: 360px) {
+      padding-left: 10rem;
+    }
+  }
+
+  &__p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $white_color;
+  }
+
+  &__h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: $white_color;
+    line-height: 5.3rem;
+  }
 
   &::before {
     content: "";
@@ -54,7 +94,7 @@
   .swiper-container {
     z-index: 200;
     height: 100%;
-    // max-width: 1200px;
+    max-width: 1200px;
 
     .swiper-wrapper {
       height: 100%;
