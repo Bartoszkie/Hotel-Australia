@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/swiper.min.css">
     <title>Aussie Luxe - Home</title>
 </head>
 
@@ -32,7 +33,66 @@
     </section>
 
     <section class="section-carousel" aria-label="Gallery">
-        <div class="slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div id="slide-1" class="slide" id="slide-1">
+                        <p class="slide__paragraph">Comedy</p>
+                        <h1 class="slide__h1">John Cleese and Eric Idle</h1>
+                        <h4 class="slide__h4">Crown Melbourne</h4>
+                        <h5 class="slide__h5">16th March</h5>
+                        <button class="slide__btn">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide">
+                        <div id="slide-1" class="slide" id="slide-1">
+                            <p class="slide__paragraph">Music</p>
+                            <h1 class="slide__h1">Berlind Carlisle and Jupiters</h1>
+                            <h4 class="slide__h4">Gold Coast</h4>
+                            <h5 class="slide__h5">4 th March</h5>
+                            <button class="slide__btn">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide">
+                        <div id="slide-1" class="slide" id="slide-1">
+                            <p class="slide__paragraph">Show</p>
+                            <h1 class="slide__h1">Cabaret De Paris and Jupiters</h1>
+                            <h4 class="slide__h4">Gold Coast</h4>
+                            <h5 class="slide__h5">27 th February</h5>
+                            <button class="slide__btn">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide">
+                        <div id="slide-1" class="slide" id="slide-1">
+                            <p class="slide__paragraph">Music</p>
+                            <h1 class="slide__h1">Tom Jones</h1>
+                            <h4 class="slide__h4">Sydney Casino</h4>
+                            <h5 class="slide__h5">22 nd Marc</h5>
+                            <button class="slide__btn">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+
+        <!-- <div class="slider">
             <div id="slide-1" class="slide" id="slide-1">
                 <a href="#slide-5" class="slide__prev"><</a>
                 <p class="slide__paragraph">Comedy</p>
@@ -76,16 +136,16 @@
                     Book Now
                 </button>
                 <a href="#slide-1" class="slide__next">></a>
-            </div>
-        </div>
-        <div class="dots">
+            </div> -->
+        <!-- </div> -->
+        <!-- <div class="dots">
             <a href="#slide-1" class="dot"></a>
             <a href="#slide-2" class="dot"></a>
             <a href="#slide-3" class="dot"></a>
             <a href="#slide-4" class="dot"></a>
             <a href="#slide-5" class="dot"></a>
         </div>
-        <span class="hide"></span>
+        <span class="hide"></span> -->
     </section>
 
     <section class="section-main">
@@ -226,6 +286,15 @@
             </div>
         </footer>
     </section>
+    <script src="./styles/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>
